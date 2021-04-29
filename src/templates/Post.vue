@@ -1,5 +1,6 @@
 <template>
   <Layout>
+    <a :href="filepath">Edit</a>
     <article>
       <h1>{{ $page.post.title }} </h1>
 
@@ -30,6 +31,9 @@ query Post ($path: String!) {
       title
       path
     }
+    fileInfo {
+      path
+    }
   }
 }
 </page-query>
@@ -39,6 +43,11 @@ query Post ($path: String!) {
   metaInfo() {
     return {
       title: this.$page.post.title
+    }
+  },
+  computed: {
+    filepath: function() {
+      return `https://github.com/high-u/documentation-with-gridsome/blob/main/${this.$page.post.fileInfo.path}`
     }
   }
 }
