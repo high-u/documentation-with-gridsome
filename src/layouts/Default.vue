@@ -8,6 +8,7 @@
         <g-link class="nav__link" to="/">Home</g-link>
         <g-link class="nav__link" to="/blog/">Blog</g-link>
         <g-link class="nav__link" to="/search/">Search</g-link>
+        <g-link class="nav__link" to="/tag-index/">Tags</g-link>
         <g-link class="nav__link" to="/about/">About</g-link>
       </nav>
     </header>
