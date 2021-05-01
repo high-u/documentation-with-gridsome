@@ -61,17 +61,16 @@ query Post ($path: String!) {
       // console.log("pres[0]", pres[0])
       // console.log("appendedButton", appendedButton)
 
-      let h2 = doc.getElementsByTagName("h2")
-      for (let e of h2) {
-        e.classList.add("text-yellow-500", "underline")
+      const classes = {
+        "h2": ["text-pink-500", "underline"],
+        "pre": ["bg-gray-700", "text-gray-50"]
       }
-
-      let pre = doc.getElementsByTagName("pre")
-      for (let e of pre) {
-        e.classList.add("bg-gray-700", "text-gray-50")
+      for (let [tag, classList] of Object.entries(classes)) {
+        let h2 = doc.getElementsByTagName(tag)
+        for (let e of h2) {
+          e.classList.add(...classList)
+        }
       }
-
-
       // console.log(doc.documentElement.innerHTML)
       return doc.documentElement.innerHTML
     }
