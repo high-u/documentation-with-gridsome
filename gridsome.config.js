@@ -6,6 +6,7 @@
 
 module.exports = {
   siteName: 'Gridsome',
+  port: 3000,
   plugins: [
     {
       use: '@gridsome/source-filesystem',
@@ -17,7 +18,11 @@ module.exports = {
             typeName: 'Tag',
             create: true
           },
-        }
+          categories: {
+            typeName: 'Category',
+            create: true
+          },
+        },
       }
     },
   ],
