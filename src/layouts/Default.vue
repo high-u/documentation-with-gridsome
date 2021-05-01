@@ -1,18 +1,28 @@
 <template>
-  <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/blog/">Blog</g-link>
-        <g-link class="nav__link" to="/search/">Search</g-link>
-        <g-link class="nav__link" to="/tag-index/">Tags</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
-      </nav>
-    </header>
-    <slot/>
+  <div class="flex">
+    <div class="flex-none w-72">
+      <navbar />
+    </div>
+    <div class="flex-grow">
+    
+      <header class="">
+        <strong>
+          <g-link to="/">{{ $static.metadata.siteName }}</g-link>
+        </strong>
+        <nav class="nav">
+          <g-link class="nav__link" to="/">Home</g-link>
+          <g-link class="nav__link" to="/blog/">Blog</g-link>
+          <g-link class="nav__link" to="/search/">Search</g-link>
+          <g-link class="nav__link" to="/tag-index/">Tags</g-link>
+          <g-link class="nav__link" to="/about/">About</g-link>
+        </nav>
+      </header>
+      <slot/>
+
+    </div>
+    <div class="flex-none w-72">
+
+    </div>
   </div>
 </template>
 
@@ -23,6 +33,16 @@ query {
   }
 }
 </static-query>
+
+<script>
+import navbar from "~/components/navbar2";
+// import Navbar from '../components/navbar.vue';
+export default {
+  components: {
+    navbar
+  }
+};
+</script>
 
 <style>
 body {
