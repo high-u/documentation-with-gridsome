@@ -2,7 +2,7 @@
   <Layout>
     <a :href="filepath">Edit</a>
     <article>
-      <h1>{{ $page.post.title }} </h1>
+      <h1 class="">{{ $page.post.title }} </h1>
 
       <div>
         Tags:
@@ -64,6 +64,11 @@ query Post ($path: String!) {
       let h2 = doc.getElementsByTagName("h2")
       for (let e of h2) {
         e.classList.add("text-yellow-500", "underline")
+      }
+
+      let pre = doc.getElementsByTagName("pre")
+      for (let e of pre) {
+        e.classList.add("bg-gray-700", "text-gray-50")
       }
 
 
