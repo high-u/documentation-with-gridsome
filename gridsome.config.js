@@ -33,5 +33,12 @@ module.exports = {
       anchorClassName: 'icon icon-link',
     }
   },
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: [require("tailwindcss")],
+      },
+    },
+  },
 }
 
