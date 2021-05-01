@@ -47,6 +47,18 @@ query Post ($path: String!) {
   },
   computed: {
     filepath: function() {
+
+      let domparser = new DOMParser()
+      let doc = domparser.parseFromString(this.$page.post.content, "text/html")
+      console.log(doc)
+      // doc.querySelectorAll(".xxx")
+      let pres = doc.getElementsByTagName("pre")
+      console.log(pres)
+      let button = document.createElement("button")
+      let appendedButton = pres[0].appendChild(button)
+      console.log("pres[0]", pres[0])
+      console.log("appendedButton", appendedButton)
+
       return `https://github.com/high-u/documentation-with-gridsome/blob/main/${this.$page.post.fileInfo.path}`
     }
   }

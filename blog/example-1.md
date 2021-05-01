@@ -14,15 +14,22 @@ tags: [ 'Blog', 'Database', 'Backend' ]
 
 ## Code Blocks
 
-```html{3,5-7}{numberLines: 21}{codeTitle: "In src/pages/Index.vue"}
-<template>
-  <Layout>
-    <h2>Latest blog posts</h2>
-    <ul>
-      <li v-for="edge in $page.allWordPressPost.edges" :key="edge.node.id">
-        {{ edge.node.title }}
-      </li>
-    </ul>
-  </Layout>
-</template>
+```html
+<html>
+<head></head>
+<body>
+  <h1></h1>
+  <div>
+    <p>abc</p>
+  </div>
+</body>
+</html>
+```
+
+## Code Blocks 2
+
+```js
+if (true) {
+  console.log("true")
+}
 ```
