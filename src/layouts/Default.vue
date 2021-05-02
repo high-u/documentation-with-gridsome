@@ -3,7 +3,7 @@
     <div class="flex-none w-72 bg-gray-800">
       <navbar />
     </div>
-    <div class="flex-grow">
+    <div class="flex-grow p-8">
     
       <header class="">
         <strong>

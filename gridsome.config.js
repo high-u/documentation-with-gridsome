@@ -6,6 +6,7 @@
 
 module.exports = {
   siteName: 'Gridsome',
+  port: 3000,
   plugins: [
     {
       use: '@gridsome/source-filesystem',
