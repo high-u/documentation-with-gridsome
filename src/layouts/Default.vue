@@ -1,9 +1,9 @@
 <template>
-  <div class="flex bg-gray-900">
+  <div class="flex min-h-screen bg-gray-900">
     <div class="flex-none w-72 bg-gray-800">
       <navbar />
     </div>
-    <div class="flex-grow p-8">
+    <div class="flex-grow overflow-y-auto overflow-x-hidden">
     
       <header class="">
         <strong>
@@ -20,9 +20,6 @@
       <slot/>
 
     </div>
-    <div class="flex-none w-72">
-
-    </div>
   </div>
 </template>
 
@@ -35,7 +32,7 @@ query {
 </static-query>
 
 <script>
-import navbar from "~/components/navbar2";
+import navbar from "~/components/navbar";
 // import Navbar from '../components/navbar.vue';
 export default {
   components: {

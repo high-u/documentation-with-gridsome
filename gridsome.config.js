@@ -18,7 +18,11 @@ module.exports = {
             typeName: 'Tag',
             create: true
           },
-        }
+          categories: {
+            typeName: 'Category',
+            create: true
+          },
+        },
       }
     },
   ],
