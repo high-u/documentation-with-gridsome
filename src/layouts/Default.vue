@@ -1,11 +1,11 @@
 <template>
-  <div class="flex min-h-screen bg-gray-900">
-    <div class="flex-none w-72 bg-gray-800">
+  <div class="flex min-h-screen bg-hex-292a2d text-gray-400">
+    <div class="flex-none w-72 bg-hex-252627">
       <navbar />
     </div>
     <div class="flex-grow overflow-y-auto overflow-x-hidden">
     
-      <header class="">
+      <header class="p-4 bg-hex-252627">
         <strong>
           <g-link to="/">{{ $static.metadata.siteName }}</g-link>
         </strong>

@@ -27,14 +27,47 @@ tags: [ 'Blog', 'Database', 'Backend' ]
 </template>
 ```
 
+_apple_
+
+__orange__
+
+*USA*
+
+**Japan**
+
+[リンクです](http://localhost:3000/blog/gridsome-markdown-blog/)
+
+# H1
+## H2
 ### H3
+#### H4
+##### H5
+###### H6
 
-- aaa
-  - bb
-    - cc
+- Fruit
+    - Apple
+    - Orange
+    - Banana
+        - green
+        - yellow
+        - blue
+- dairy
+    - milk
+    - cheese
 
-- [ ] zzz
-- [x] zzz
+---
+
+1. Fruit
+    1. Apple
+    1. Orange
+    1. Banana
+        1. green
+        1. yellow
+        1. blue
+1. dairy
+    1. milk
+    1. cheese
+
 
 | No | name | age | address | phone |
 |----|------|-----|---------|-------|
@@ -42,4 +75,10 @@ tags: [ 'Blog', 'Database', 'Backend' ]
 | 2  | Fuga | 32  | yyy     | 0001  |
 | 3  | Piyo | 43  | zzz     | 0002  |
 
-- `git add .`
+- [ ] zzz
+- [x] zzz
+
+`git add .`
+
+> Tiam, ad mint andaepu dandae nostion secatur sequo quae. 
+Note that you can use Markdown syntax within a blockquote.
