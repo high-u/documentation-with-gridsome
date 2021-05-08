@@ -62,7 +62,7 @@ query Post ($path: String!) {
       // console.log("appendedButton", appendedButton)
 
       const classes = {
-        "h2": ["text-pink-500", "underline"],
+        "h2": ["text-lime-500", "underline"],
         "pre": ["bg-gray-700", "text-gray-50"]
       }
       for (let [tag, classList] of Object.entries(classes)) {

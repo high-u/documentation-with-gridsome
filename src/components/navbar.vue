@@ -4,7 +4,7 @@
       <div>{{ category }}</div>
       <ul>
         <li v-for="post in posts" :key="post.id">
-          <g-link :to="post.path" class="bg-windi-pink-700">{{ post.title }}</g-link>
+          <g-link :to="post.path" class="bg-amber-500">{{ post.title }}</g-link>
         </li>
       </ul>
     </div>
