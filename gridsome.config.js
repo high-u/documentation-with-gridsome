@@ -25,6 +25,12 @@ module.exports = {
         },
       }
     },
+    {
+      use: 'gridsome-plugin-windicss',
+      options: {
+        // see https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts
+      },
+    },
   ],
   templates: {
     Tag: '/tag/:id',
@@ -37,13 +43,6 @@ module.exports = {
       externalLinksRel: ['noopener', ],
       anchorClassName: 'icon icon-link',
     }
-  },
-  css: {
-    loaderOptions: {
-      postcss: {
-        plugins: [require("tailwindcss")],
-      },
-    },
-  },
+  }
 }
 
