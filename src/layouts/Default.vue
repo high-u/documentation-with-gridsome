@@ -1,6 +1,6 @@
 <template>
   <div class="flex min-h-screen bg-hex-292a2d text-gray-400">
-    <div class="flex-none w-72 bg-hex-252627">
+    <div class="flex-none bg-hex-212020 p-3 w-64">
       <navbar />
     </div>
     <div class="flex-grow overflow-y-auto overflow-x-hidden">

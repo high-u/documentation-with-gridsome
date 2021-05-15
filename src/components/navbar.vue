@@ -1,10 +1,10 @@
 <template>
   <nav class="overflow-y-auto overflow-x-hidden ">
     <div v-for="(posts, category) in categoryTree" :key="category" >
-      <div>{{ category }}</div>
+      <div class="text-sm text-gray-400 opacity-50 px-2 pt-5 pb-2">{{ category }}</div>
       <ul>
         <li v-for="post in posts" :key="post.id">
-          <g-link :to="post.path" class="bg-amber-500">{{ post.title }}</g-link>
+          <g-link :to="post.path" class="text-gray-400 leading-tight inline-block my-1 py-1 px-2 hover:bg-hex-292a2d rounded">{{ post.title }}</g-link>
         </li>
       </ul>
     </div>
