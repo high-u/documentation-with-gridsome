@@ -1,7 +1,8 @@
 <template>
   <Layout>
-    <div class="grid justify-items-end mx-16 mt-16"><a :href="filepath" class="text-sm underline">Edit</a></div>
-    <article class="mx-16 mt-6 mb-8">
+    <div class="p-16">
+    <div class="grid justify-items-end mb-6"><a :href="filepath" class="text-sm underline">Edit</a></div>
+    <article class="">
       <h1 class="mb-4 font-bold text-5xl">{{ $page.post.title }} </h1>
 
       <div class="mb-2 opacity-50">
@@ -16,8 +17,9 @@
 
       <p class="mb-7">Posted on {{ $page.post.date }}</p>
 
-      <div class="markdown-body mb-8" id="article-area" v-html="contentWithTailwind" />
+      <div class="markdown-body" id="article-area" v-html="contentWithTailwind" />
     </article>
+    </div>
   </Layout>
 </template>
 
